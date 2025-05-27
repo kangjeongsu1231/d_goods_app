@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('로고 없는 테스트'),
+          title: SvgPicture.asset(
+            'assets/images/logo.svg',
+            height: 32,
+            semanticsLabel: '앱 로고',
+          ),
           centerTitle: true,
         ),
         body: Center(child: Text('Hello Flutter')),
